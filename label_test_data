@@ -1,0 +1,3 @@
+#! /usr/bin/env sh
+ls test-data/lenny/* | ./label > results.out && \
+  ls test-data/not-lenny/* | ./label >> results.out
