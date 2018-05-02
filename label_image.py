@@ -147,5 +147,6 @@ if __name__ == "__main__":
     for i in top_k:
       out_arr.append(labels[i])
       out_arr.append('%.2f' % results[i])
-    print("\t".join(out_arr), flush=True)
+    print("\t".join(out_arr))
+    sys.stdout.flush()
 
